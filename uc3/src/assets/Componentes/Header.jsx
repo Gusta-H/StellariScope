@@ -11,7 +11,7 @@ function Header(){
             <nav id="navegar">
                 <ul>
                     <li><Link to='/'>Início</Link></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><Link to='/Loja'>Produtos</Link></li>
                     <li>
                         <a href="#">Explorar ▾</a>
                         <ul className={Styles.dropdown}>
@@ -20,11 +20,11 @@ function Header(){
                         </ul>
                         </li>
                     <li><Link to='/Aprenda'>Aprenda</Link></li>
-                    <li><a href="#">Sobre nós</a></li>
+                    <li><Link to='/Sobre'>Sobre nós</Link></li>
                 </ul>  
             </nav>
             <a href="#" className={Styles.user}></a>
-            <a href="#" className={Styles.car}></a>
+            <Link to='/Carrinho' className={Styles.car}></Link>
             
         </header>
     )

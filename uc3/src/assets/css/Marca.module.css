@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.caixa1 {
+  width: 85%;
+  padding: 2rem;
+  margin-top: 100px ;
+  position: relative;
+}
+
+.texto {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none; 
+}
+
+.card {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.027);
+  border-radius: 15px;
+  padding-top: 1rem;
+  min-width: 200px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.imagem {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.ajusteBlusa {
+  height: 300px;
+  object-fit: contain;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+
+.text{
+  width: 100%;
+  height: 80px;
+  background: rgb(15, 23, 42);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.preco {
+  color: #f2c94c;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  padding-top: 10px;
+}
+
+.nome {
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn {
+  background-color: #1a1a2e;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn:hover {
+  background-color: #292945;
+}
+
+.btn:first-of-type {
+  left: -60px;
+}
+
+.btn:last-of-type {
+  right: -60px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .caixa1 {
+      width: 90%;
+      padding: 1.5rem;
+      margin-top: -35px;
+  }
+  
+  .card {
+      min-width: 180px;
+  }
+  
+  .btn {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .caixa1 {
+      width: 95%;
+      padding: 1rem;
+      margin-top: -10px;
+  }
+  
+  .texto {  
+      font-size: 13px;
+  }
+  
+  .card {
+      min-width: 150px;
+  }
+  
+  .btn {
+     display: none;
+  }
+  
+  .ajusteBlusa {
+      height: 260px;
+      margin-top: -30px;
+      margin-bottom: -30px;
+  }
+}

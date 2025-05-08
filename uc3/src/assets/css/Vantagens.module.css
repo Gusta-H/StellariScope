@@ -1,0 +1,71 @@
+.caixa1 {
+    width: 90%;
+    height: 250px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 30%;
+    height: 200px;
+    background-color: rgba(15, 23, 42, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 768px) {
+    .caixa1 {
+        width: 95%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+        margin-top: 10px;
+    }
+    
+    .box {
+        width: 45%;
+        height: auto;
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa1 {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    
+    .box {
+        width: 90%;
+        min-height: 150px;
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    p {
+        font-size: 0.8rem;
+    }
+}

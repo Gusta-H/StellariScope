@@ -1,0 +1,61 @@
+.camada {
+    width: 100%;
+    height: auto;
+    font-family: 'Sora';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titulo {
+    width: 70%;
+    font-family: 'Sora';
+    font-size: 60px;
+    background: linear-gradient(85deg, #cac9c9, #4e16ad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+}
+
+.texto {
+    width: 70%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    color: white;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .titulo {
+      width: 90%;
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .texto {
+      width: 90%;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  }
+  
+  /* Celulares */
+  @media (max-width: 480px) {
+    .titulo {
+      font-size: 28px;
+    }
+  
+    .texto {
+      font-size: 16px;
+    }
+  }
+  

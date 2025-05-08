@@ -1,0 +1,25 @@
+.titulo{
+    width: 50%;
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 50px;
+    background: linear-gradient(85deg, #cac9c9, #4e16ad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: auto;
+}
+@media (max-width: 768px) {
+    .titulo {
+        width: 80%; /* Ajusta a largura para telas menores */
+        font-size: 40px; /* Diminui o tamanho da fonte para dispositivos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        width: 90%; /* Ajusta ainda mais a largura em telas muito pequenas */
+        font-size: 30px; /* Diminui o tamanho da fonte para telas muito pequenas */
+    }
+}

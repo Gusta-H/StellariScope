@@ -1,0 +1,60 @@
+.caixa1 {
+    width: 80%;
+    height: 150px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.botoes {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.botao {
+    width: 18%;
+    height: 50px;
+    background-color: #7B57C1;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .caixa1 {
+        width: 90%;
+        margin-top: -25px;
+    }
+    
+    .botao {
+        width: 22%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa1 {
+        width: 95%;
+        margin-top: 30px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .botoes {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .botao {
+        width: 80%;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+}

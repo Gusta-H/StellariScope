@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.conteudo{
+    width: 97%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.esquerda{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.produto{
+    width: 95%;
+    height: 255px;
+    margin: auto;
+    background-color: rgba(15, 23, 42, 0.7);
+    border: 3px solid rgba(73, 84, 151, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.produto2{
+    width: 95%;
+    height: 210px;
+    background-color:rgba(4,29,88, 0.5) ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.foto{
+    width: 180px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url(../imagens/telescopio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.nome{
+    width: 210px;
+    height: 50px;
+    font-family: 'Sora';
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
+  
+.escolha {
+    font-family: 'Sora';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+  
+.numero {
+    width: 70px;
+    padding: 10px;
+    font-size: 19px;
+    text-align: center;
+    background-color: #fcfcfc;
+    border: none;
+    border-radius: 8px;
+    color: #3D1470 ;
+    font-family: 'Sora';
+    font-weight: 600;
+}
+  
+.opcao {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+}
+  
+.opcao input[type="radio"] {
+    display: none;
+}
+  
+.radio {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 6px;
+    position: relative;
+}
+  
+.opcao input[type="radio"]:checked + .radio::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+  
+.preco{
+    width: 125px;
+    height: 20px;
+    font-family: 'Sora';
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.recomendacao{
+    width: 95%;
+    height: 365px;
+    margin: auto;
+    background-color: rgba(15, 23, 42, 0.7);
+    border: 3px solid rgba(73, 84, 151, 0.3);
+    border-radius: 15px;
+}
+.texto{
+    font-family: 'Sora';
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.carrossel{
+    width: 95%;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+
+}
+.foto1{
+    width: 180px;
+    height: 240px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.direita{
+    width: 30%;
+    height: auto;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entrega{
+    width: 95%;
+    height: 120px;
+    background-color: rgba(15, 23, 42, 0.7);
+    border: 3px solid rgba(73, 84, 151, 0.3);
+    border-radius: 15px;
+}
+.desconto{
+    width: 95%;
+    height: 120px;
+    background-color: rgba(15, 23, 42, 0.7);
+    border: 3px solid rgba(73, 84, 151, 0.3);
+    border-radius: 15px;
+}
+.resumo{
+    width: 95%;
+    height: 350px;
+    background-color: rgba(15, 23, 42, 0.7);
+    border: 3px solid rgba(73, 84, 151, 0.3);
+    border-radius: 15px;
+}
+
+.entrega p{
+    color: white;
+    font-family: 'Sora';
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.cepContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Sora';
+    margin-left: 15px;
+}
+  
+.cepInput {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-family: 'Sora';
+}
+  
+  
+.cepField {
+    border: none;
+    background: transparent;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Sora';
+}
+  
+.calcularBtn {
+    background-color: #9B1B69;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Sora';
+}
+
+.desconto p{
+    color: white;
+    font-family: 'Sora';
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.cupomContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Sora';
+    margin-left: 15px;
+}
+  
+.cupomInput {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-family: 'Sora';
+}
+  
+.cupomField {
+    border: none;
+    background: transparent;
+    color: #000000;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Sora';
+}
+
+.resumo p{
+    color: white;
+    font-family: 'Sora';
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px;
+    display: flex;
+}
+
+.resumoCarrinho {
+  font-family: 'Sora', sans-serif;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: -12px;
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.linhaTotal {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.inputCep {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #ffffff;
+  text-align: right;
+  font-size: 14px;
+  outline: none;
+  width: 120px;
+  font-family: 'Sora';
+}
+
+.divisor {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 8px 0;
+}
+
+.botaoFinalizar, .botaoContinuar {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #9B1B69;
+  color: white;
+  font-family: 'Sora';
+}
+
+
+@media (max-width: 1024px) {
+    .conteudo {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .esquerda,
+    .direita,
+    .produto,
+    .produto2,
+    .recomendacao,
+    .entrega,
+    .desconto,
+    .resumo {
+      width: 95%;
+    }
+  
+    .foto {
+      width: 140px;
+      height: 140px;
+    }
+  
+    .foto1 {
+      width: 40%;
+      height: auto;
+    }
+  
+    .nome,
+    .preco,
+    .entrega p,
+    .desconto p,
+    .resumo p {
+      font-size: 16px;
+    }
+  
+    .numero {
+      font-size: 16px;
+      padding: 8px;
+    }
+  
+    .radio {
+      width: 10px;
+      height: 10px;
+    }
+  
+    .cepField,
+    .cupomField,
+    .calcularBtn {
+      font-size: 13px;
+    }
+  
+    .resumoCarrinho {
+      font-size: 14px;
+      padding: 16px;
+      width: 100%;
+    }
+  
+    .botaoFinalizar,
+    .botaoContinuar {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .produto,
+    .produto2 {
+      flex-direction: column;
+      height: auto;
+      gap: 16px;
+      padding: 20px 0;
+    }
+  
+    .foto {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .nome,
+    .preco,
+    .entrega p,
+    .desconto p,
+    .resumo p {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .numero {
+      font-size: 14px;
+      padding: 6px;
+    }
+  
+    .escolha {
+      gap: 6px;
+    }
+  
+    .carrossel {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .foto1 {
+      width: 100%;
+    }
+  
+    .cepContainer,
+    .cupomContainer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+    }
+  
+    .resumoCarrinho {
+      font-size: 13px;
+      padding: 12px;
+    }
+  
+    .linha {
+      font-size: 13px;
+    }
+  
+    .linhaTotal {
+      font-size: 15px;
+    }
+  
+    .inputCep,
+    .cepField,
+    .cupomField {
+      font-size: 13px;
+    }
+  
+    .botaoFinalizar,
+    .botaoContinuar {
+      width: 100%;
+      font-size: 13px;
+      padding: 10px;
+    }
+  }
+  @media (max-width: 600px) {
+    .cepInput, .cupomInput {
+      padding: 8px 12px;
+      border-radius: 8px;
+      width: 90%;
+    }
+  
+    .cepField, .cupomField {
+      font-size: 13px;
+    }
+  
+    .calcularBtn, .botaoFinalizar, .botaoContinuar {
+      width: 100%;
+      font-size: 13px;
+      padding: 8px;
+      margin-top: 4px;
+    }
+  
+    .cupomContainer, .cepContainer {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 6px;
+      margin-left: 0;
+      padding: 0 12px;
+    }
+  
+    .entrega p, .desconto p {
+      font-size: 15px;
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .resumoCarrinho {
+      padding: 12px;
+    }
+  }
+  @media (max-width: 600px) {
+    .carrossel {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 12px;
+      padding-bottom: 10px;
+    }
+  
+    .foto1 {
+      min-width: 120px;
+      height: 180px;
+      flex-shrink: 0;
+    }
+  
+    .foto1 img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .direita {
+      width: 100%;
+      padding: 0 12px;
+      box-sizing: border-box;
+    }
+  
+    .entrega,
+    .desconto,
+    .resumo {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .resumoCarrinho {
+      width: 100%;
+      padding: 16px;
+    }
+  
+    .botaoFinalizar,
+    .botaoContinuar {
+      width: 100%;
+    }
+  }  
+
+  @media (max-width: 768px) {
+    .conteudo {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .esquerda,
+    .direita {
+      width: 100%;
+    }
+  
+    .direita {
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+  
+    .entrega,
+    .desconto,
+    .resumo {
+      width: 90%;
+      margin-top: 20px;
+    }
+  
+    .resumoCarrinho {
+      width: 90%;
+      padding: 16px;
+    }
+  
+    .botaoFinalizar,
+    .botaoContinuar {
+      width: 95%;
+    }
+  }
+  
