@@ -1,0 +1,53 @@
+.carrossel {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .seta {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 2;
+  }
+  
+  .seta:hover {
+    transform: scale(1.2);
+  }
+  
+  .depoimento {
+    width: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .depoimento img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .carrossel {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .seta {
+      font-size: 2rem;
+    }
+  
+    .depoimento {
+      max-width: 90%;
+    }
+  }
+  

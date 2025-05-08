@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+footer {
+    width: 100%;
+    height: auto; /* Alterado de height fixo para auto */
+}
+
+.conteudo {
+    width: 100%;
+    background-color: #0d1321;
+    display: flex;
+    flex-direction: column; /* Mobile first: empilha os elementos */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.logo {
+    width: 120px;
+    height: 80px;
+    background-image: url(../imagens/logo4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.linha {
+    width: 80%;
+    height: 1px; /* No mobile, a linha é horizontal */
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 15px 0;
+}
+
+.conteudo1, .conteudo2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.info, .info1 {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.info {
+    font-weight: 600;
+}
+
+.info1 {
+    font-weight: 300;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+    gap: 15px;
+}
+
+.instagram, .facebook {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter {
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instagram {
+    background-image: url(../imagens/instagram.png);
+}
+
+.facebook {
+    background-image: url(../imagens/facebook.png);
+}
+
+.twitter {
+    background-image: url(../imagens/twitter.png);
+}
+
+.direitos {
+    width: 100%;
+    background-color: #1B2232;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+/* Menu mobile */
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none; /* Oculto por padrão */
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-mobile.active {
+    display: flex;
+}
+
+/* Media query para tablets */
+@media screen and (min-width: 768px) {
+    .conteudo {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 30px 20px;
+    }
+    
+    .logo {
+        width: 140px;
+        height: 100px;
+        margin-bottom: 0;
+    }
+    
+    .linha {
+        width: 1px;
+        height: 180px; /* Linha volta a ser vertical */
+        margin: 0 15px;
+    }
+    
+    .conteudo1, .conteudo2 {
+        width: 25%;
+        align-items: flex-start;
+        margin: 0;
+    }
+    
+    .redes {
+        width: 20%;
+        justify-content: space-around;
+        margin: 0;
+    }
+    
+    .menu-toggle {
+        display: none; /* Oculta o botão de menu em telas maiores */
+    }
+    
+    .menu-mobile {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .direitos {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+/* Media query para desktop */
+@media screen and (min-width: 1024px) {
+    .conteudo {
+        justify-content: space-around;
+        padding: 40px 20px;
+    }
+    
+    .logo {
+        width: 12%;
+        height: 110px;
+    }
+    
+    .linha {
+        height: 200px;
+    }
+    
+    .conteudo1 {
+        width: 10%;
+    }
+    
+    .conteudo2 {
+        width: 15%;
+    }
+    
+    .info, .info1 {
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    .redes {
+        width: 25%;
+    }
+    
+    .instagram, .facebook {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .twitter {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .direitos {
+        font-size: 18px;
+    }
+}

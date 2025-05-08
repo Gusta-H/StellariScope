@@ -1,0 +1,72 @@
+.carrosselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carrossel {
+    display: flex;
+    overflow: hidden; /* Esconde imagens fora do contêiner */
+  }
+  
+  .image {
+    width: 350px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .setaEsquerda, .setaDireita {
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    color: #7e57c2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .setaEsquerda {
+    left: 140px;
+  }
+  
+  .setaDireita {
+    right: 140px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 1200px) {
+    .image {
+      width: 250px; /* Ajuste o tamanho das imagens em telas maiores */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .image {
+      width: 200px; /* Ajuste o tamanho das imagens em telas médias */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      width: 150px; /* Ajuste o tamanho das imagens em telas pequenas */
+      margin: 0 5px; /* Menos espaço entre as imagens em telas pequenas */
+    }
+  
+    .setaEsquerda, .setaDireita {
+      font-size: 1.5rem; /* Diminui o tamanho das setas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image {
+      width: 120px; /* Ajuste o tamanho das imagens em telas muito pequenas */
+    }
+  
+    .setaEsquerda, .setaDireita {
+      font-size: 1.2rem; /* Diminui ainda mais o tamanho das setas */
+    }
+  }
+  
