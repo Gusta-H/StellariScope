@@ -1,4 +1,5 @@
-import Styles from '../css/Telescopios.module.css'
+import { Link } from 'react-router-dom';
+import Styles from '../css/Telescopios.module.css';
 import tele1 from '../imagens/tele1.png';
 import tele2 from '../imagens/tele2.png';
 import tele3 from '../imagens/tele3.png';
@@ -36,6 +37,7 @@ const produtos = [
     preco: 'R$ 2.180,00',
     categoria: 'Compra',
     imagem: tele5,
+    link: '/Produto', // link correto aqui
   },
   {
     nome: 'Telescópio Refletor Lelong 900114mm com Tripé',
@@ -48,23 +50,29 @@ const produtos = [
 function Telescopios() {
   return (
     <div className={Styles.Telescopios}>
-      {produtos.map((item, index) => (
-        <a href="#" className={Styles.caixa1} key={index}>
-          {/* Tarja da categoria */}
-          <div className={`${Styles.categoria} ${item.categoria === 'Aluguel' ? Styles.aluguel : Styles.compra}`}>
-            {item.categoria}
-          </div>
-          <img
-            src={item.imagem}
-            alt={item.nome}
-            className={Styles.imagem}
-          />
-          <div className={Styles.text}>
-            <p className={Styles.preco}>{item.preco}</p>
-            <p className={Styles.nome}>{item.nome}</p>
-          </div>
-        </a>
-      ))}
+      {produtos.map((item, index) => {
+        const Wrapper = item.link ? Link : 'a'; // Usa Link se tiver link, senão usa <a>
+        const wrapperProps = item.link
+          ? { to: item.link, className: Styles.caixa1 }
+          : { href: '#', className: Styles.caixa1 };
+
+        return (
+          <Wrapper key={index} {...wrapperProps}>
+            <div className={`${Styles.categoria} ${item.categoria === 'Aluguel' ? Styles.aluguel : Styles.compra}`}>
+              {item.categoria}
+            </div>
+            <img
+              src={item.imagem}
+              alt={item.nome}
+              className={Styles.imagem}
+            />
+            <div className={Styles.text}>
+              <p className={Styles.preco}>{item.preco}</p>
+              <p className={Styles.nome}>{item.nome}</p>
+            </div>
+          </Wrapper>
+        );
+      })}
     </div>
   );
 }

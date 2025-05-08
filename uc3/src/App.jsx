@@ -10,8 +10,10 @@ import Acessorio from './assets/Componentes/Main_acessorio.jsx'
 import Binoculos from './assets/Componentes/Main_binoculos.jsx'
 import Carrinho from './assets/Componentes/Carrinho.jsx';
 import Equipe from './assets/Componentes/Main_Sobre.jsx'
- 
-
+import Planetario from './assets/Componentes/Main_planetario.jsx'
+import Observatorio from './assets/Componentes/Observatorio.jsx'
+import Dados from './assets/Componentes/Dados.jsx'
+import Produto from './assets/Componentes/Produtos1.jsx'
 function App() {
   return (
     <Router>
@@ -25,6 +27,10 @@ function App() {
           <Route path='/Binoculos' element={<Binoculos />} />
           <Route path='/Carrinho' element={<Carrinho />} />
           <Route path='/Sobre' element={<Equipe />} />
+          <Route path='/Planetario' element={<Planetario />} />
+          <Route path='/Observatorio' element={<Observatorio />} />
+          <Route path='/Dados' element={<Dados />} />
+          <Route path='/Produto' element={<Produto />} />
         </Routes>
         <Footer />
       </Layout>

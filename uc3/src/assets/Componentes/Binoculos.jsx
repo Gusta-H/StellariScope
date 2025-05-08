@@ -4,7 +4,6 @@ import bino2 from '../imagens/bino2.png';
 import bino3 from '../imagens/bino3.png';
 import bino4 from '../imagens/bino4.png';
 import bino5 from '../imagens/bino5.png';
-import bino6 from '../imagens/bino6.png';
 
 const produtos = [
   {
@@ -20,29 +19,24 @@ const produtos = [
     imagem: bino2,
   },
   {
-    nome: 'Telescópio refrator azimutal D70/F70MM - REF BM-70070S',
+    nome: 'Binóculo GSN 15x70 PRO',
     preco: 'R$ 199,99',
     categoria: 'Aluguel',
     imagem: bino3,
   },
   {
-    nome: 'Sky-Watcher 705AZ Telescópio Refrator 70mm f/7',
+    nome: 'Binóculo Octans Spare II PRO 15x70 AT com Ocular BIG EYE com Estojo de Alumínio',
     preco: 'R$ 699,99',
     categoria: 'Compra',
     imagem: bino4,
   },
   {
-    nome: 'Telescópio N 130/650 Explorer EQ-2',
+    nome: 'Binóculo Octans Spare II PRO 15x70 AT com Ocular BIG EYE',
     preco: 'R$ 980,00',
     categoria: 'Compra',
     imagem: bino5,
   },
-  {
-    nome: 'Telescópio Refletor Lelong 900114mm com Tripé',
-    preco: 'R$ 1.140,00',
-    categoria: 'Compra',
-    imagem: bino6,
-  },
+
 ];
 
 function Binoculos() {

@@ -19,8 +19,9 @@
 .botao {
     width: 18%;
     height: 50px;
-    background-color: #7B57C1;
+    background-color: rgba(39, 39, 127, 1);
     color: white;
+    font-weight: 600;
     border-radius: 15px;
     display: flex;
     align-items: center;

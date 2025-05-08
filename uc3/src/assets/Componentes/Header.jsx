@@ -15,15 +15,15 @@ function Header(){
                     <li>
                         <a href="#">Explorar ▾</a>
                         <ul className={Styles.dropdown}>
-                            <li><a href="#">Planetários</a></li>
-                            <li><a href="#">Observatórios</a></li>
+                            <li><Link to='/Planetario'>Planetários</Link></li>
+                            <li><Link to='/Observatorio'>Observatórios</Link></li>
                         </ul>
                         </li>
                     <li><Link to='/Aprenda'>Aprenda</Link></li>
                     <li><Link to='/Sobre'>Sobre nós</Link></li>
                 </ul>  
             </nav>
-            <a href="#" className={Styles.user}></a>
+            <Link to='/Dados' className={Styles.user}></Link>
             <Link to='/Carrinho' className={Styles.car}></Link>
             
         </header>

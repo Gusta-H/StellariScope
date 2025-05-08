@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.caixa{
+    width: 430px;
+    height: 350px;
+    background-color:rgba(7, 15, 34, 0.9);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease;
+    position: absolute;
+}
+.caixa:hover{
+    box-shadow: 0 0 35px 5px rgba(126, 126, 126, 0.7);
+    transform: scale(1.05);
+}
+
+.titulo{
+    width: 75%;
+    height: auto;
+    font-family: 'Sora';
+    font-size: 19px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+.texto{
+    width: 90%;
+    height: auto;
+    font-family: 'Sora';
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+.botao2{
+    text-decoration: none;
+    font-family: 'Sora';
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background: linear-gradient(85deg, #3F51B5, #7E57C2);
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.botao2:hover {
+    transform: scale(1.09);
+}
+
+
+@media (max-width: 768px) {
+    .primeiro, .terceiro, .quinto {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .segundo, .quarto, .sexto {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .imagem1, .imagem2,
+    .conteudo1, .conteudo2 {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .foto {
+        width: 90%;
+        height: auto;
+    }
+
+    .caixa {
+        position: static;
+        width: 90%;
+        max-width: 450px;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px 10px;
+    }
+
+    .titulo {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .texto {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .botao2 {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}

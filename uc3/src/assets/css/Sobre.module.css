@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* Estilos base */
+.fundinho {
+    background-color: rgb(5, 7, 37);
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.titulo {
+    position: relative;
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.degrade {
+    color: #fafafa;
+    font-size: 60px;
+    font-family: 'Sora';
+    text-align: center;
+    background-image: linear-gradient(to right, #E0E0E0, #7E57C2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+}
+
+.ceu {
+    width: 60%;
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Sora';
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.descendo {
+    width: 400px;
+    height: 40px;
+    font-family: 'Sora';
+    font-size: 20px;
+    background-image: linear-gradient(to right, #3F51B5, #7E57C2);
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.descendo:hover {
+    transition: 1s all;
+    box-shadow: 0px 0px 3px 5px #ffffff70;
+}
+
+/* Seções dos planetários - estilos comuns */
+.planetario0, .planetario1, .planetario2 {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Sora';
+    margin-bottom: 20px;
+}
+
+/* Conteúdo de texto para todas as seções */
+.carmo, .ibira, .joha {
+    position: relative;
+    width: 45%;
+    max-width: 600px;
+}
+
+/* Imagens para todas as seções */
+.fotocarmo, .fotoibira, .fotojoha {
+    position: relative;
+    width: 45%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Estilos específicos para cada planetário */
+.carmo_h1, .joha_h1 {
+    font-size: 35px;
+    text-align: left;
+    color: #FFF;
+}
+
+.carmo_p, .joha_p {
+    font-size: 20px;
+    color: #FFF;
+}
+
+.ibira_h1 {
+    font-size: 35px;
+    text-align: right;
+    color: #FFF;
+}
+
+.ibira_p {
+    font-size: 20px;
+    text-align: right;
+    color: #FFF;
+}
+
+/* Botões */
+.butao {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #3F51B5, #7E57C2);
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    font-family: 'Sora';
+    margin-top: 15px;
+}
+
+.butao:hover {
+    transition: 1s all;
+    box-shadow: 0px 0px 3px 5px #ffffff70;
+}
+
+.ibira_b {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    color: #FFF;
+    background-image: linear-gradient(to right, #3F51B5, #7E57C2);
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    float: right;
+    margin-top: 15px;
+}
+
+.ibira_b:hover {
+    transition: 1s all;
+    box-shadow: 0px 0px 3px 5px #ffffff70;
+}
+
+/* Imagens dentro do carrossel */
+img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Media queries para responsividade */
+
+/* Tablets e dispositivos menores */
+@media screen and (max-width: 1024px) {
+    .degrade {
+        font-size: 40px;
+    }
+    
+    .ceu {
+        width: 80%;
+        font-size: 18px;
+    }
+    
+    .descendo {
+        width: 300px;
+        font-size: 18px;
+    }
+    
+    .carmo_h1, .ibira_h1, .joha_h1 {
+        font-size: 28px;
+    }
+    
+    .carmo_p, .ibira_p, .joha_p {
+        font-size: 16px;
+    }
+    
+    img {
+        height: 240px;
+    }
+}
+
+/* Dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .fundinho {
+        height: auto;
+    }
+    
+    .titulo {
+        padding: 50px 15px;
+    }
+    
+    .degrade {
+        font-size: 32px;
+    }
+    
+    .ceu {
+        width: 90%;
+        font-size: 16px;
+    }
+    
+    .descendo {
+        width: 200px;
+        max-width: 280px;
+        font-size: 16px;
+    }
+    
+    /* Alteração do layout para coluna em telas menores */
+    .planetario0, .planetario1, .planetario2 {
+        flex-direction: column;
+        padding: 30px 15px;
+        height: auto;
+    }
+    
+    /* Inverter ordem no segundo planetário para manter texto sempre acima da imagem */
+    .planetario1 {
+        flex-direction: column-reverse;
+    }
+    
+    /* Ajuste para textos e imagens ocuparem largura total em móveis */
+    .carmo, .ibira, .joha, .fotocarmo, .fotoibira, .fotojoha {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Alinhamento centralizado para todos os textos em mobile */
+    .ibira_h1, .ibira_p {
+        text-align: left;
+    }
+    
+    /* Ajustar botão do Ibirapuera para não ficar deslocado à direita */
+    .ibira_b {
+        float: none;
+        left: 0;
+    }
+    
+    /* Ajustar altura das imagens */
+    img {
+        height: 200px;
+    }
+}
+
+/* Dispositivos muito pequenos */
+@media screen and (max-width: 480px) {
+    .degrade {
+        font-size: 28px;
+    }
+    
+    .ceu {
+        font-size: 14px;
+    }
+    
+    .carmo_h1, .ibira_h1, .joha_h1 {
+        font-size: 24px;
+    }
+    
+    .carmo_p, .ibira_p, .joha_p {
+        font-size: 14px;
+    }
+    
+    img {
+        height: 180px;
+    }
+}

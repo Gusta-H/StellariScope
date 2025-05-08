@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.baner1 {
+    width: 90%;
+    height: 370px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto1 {
+    width: 70%;
+    font-family: 'Sora';
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 50px;
+    background: linear-gradient(85deg, #cac9c9, #4e16ad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.texto2 {
+    width: 70%;
+    font-family: 'Sora';
+    font-size: 25px;
+    color: white;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+/* Telas grandes (desktop acima de 1200px) */
+@media screen and (min-width: 1200px) {
+    .texto1 {
+        font-size: 60px;
+    }
+
+    .texto2 {
+        font-size: 25px;
+    }
+}
+
+/* Telas médias (tablets entre 768px e 1199px) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    .baner1 {
+        margin-top: 150px;
+    }
+
+    .texto1 {
+        font-size: 45px;
+        width: 50%;
+    }
+
+    .texto2 {
+        font-size: 20px;
+        width: 80%;
+    }
+}
+
+/* Telas pequenas (celulares abaixo de 768px) */
+@media screen and (max-width: 767px) {
+    .baner1 {
+        margin-top: 100px;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .texto1 {
+        font-size: 30px;
+        width: 95%;
+    }
+
+    .texto2 {
+        font-size: 18px;
+        width: 90%;
+    }
+}
